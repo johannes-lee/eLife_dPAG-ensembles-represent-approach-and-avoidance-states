@@ -462,6 +462,8 @@ def plotheatmap(xy, data, **kwargs):
             offset = item
         if key == 'returnxy':
             returnxy = item
+        if key == 'cmap':
+            cmap = item
     if not 'ax' in kwargs:
         plt.figure(figsize=figsize)
         ax = plt.gca()
